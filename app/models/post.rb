@@ -1,4 +1,4 @@
 class Post < ApplicationRecord
-  validates :image, presence: true
+  validates :image, :user_id, presence: true
   belongs_to :user
 end
