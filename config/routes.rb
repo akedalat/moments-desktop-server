@@ -14,6 +14,6 @@ Rails.application.routes.draw do
   #   resources :followers, :following
   # end
 
-  resources :relationships #only: [:create, :destroy]
+  resources :relationships
 
 end
