@@ -1,4 +1,3 @@
-
 class CommentsController < ApplicationController
 
   before_action :set_post
@@ -37,7 +36,7 @@ class CommentsController < ApplicationController
   private
 
   def comment_params
-    params.require(:comment).permit(:content, :user_id, :post_id)
+    params.permit(:content, :user_id, :post_id)
   end
 
   def set_post
