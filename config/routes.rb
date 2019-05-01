@@ -16,4 +16,6 @@ Rails.application.routes.draw do
 
   resources :relationships
 
+  post "/login", to: "auth#login"
+
 end
