@@ -5,7 +5,10 @@ class AuthController < ApplicationController
 
     if @user && @user.authenticate(params[:password])
       render json: @user
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     else
       render json: {errors: "login failed!"}
     end
