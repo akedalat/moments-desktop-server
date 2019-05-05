@@ -18,7 +18,7 @@ u9 = User.create(name:"Sam Baker", password:"123", username:"sam", email:"sam@fl
 u10 = User.create(name:"Gabriel", password:"123", username:"gabriel", email:"gabriel@flatiron.com", avatar:"http://localhost:3000/face_emoji.png")
 
 
-p1= Post.create(caption:"Me looking at you al the time babe!", image:"http://localhost:3000/1.jpg", user_id:u1.id)
+p1= Post.create(caption:"Me looking at you all the time babe!", image:"http://localhost:3000/1.jpg", user_id:u1.id)
 p2 = Post.create(image:"http://localhost:3000/2.jpg", user_id:u1.id)
 p3 = Post.create(caption:"Developer can't fix the bug!", image:"http://localhost:3000/3.jpg", user_id:u2.id)
 p4 = Post.create(caption:"How can you not go veg?", image:"http://localhost:3000/4.jpg", user_id:u3.id)
