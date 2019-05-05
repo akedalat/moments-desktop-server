@@ -17,5 +17,6 @@ Rails.application.routes.draw do
   resources :relationships
 
   post "/login", to: "auth#login"
+  get "/auto_login", to: "auth#get_current_user"
 
 end
