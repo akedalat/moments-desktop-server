@@ -18,6 +18,8 @@ gem 'puma', '~> 3.11'
 
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'jwt'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
