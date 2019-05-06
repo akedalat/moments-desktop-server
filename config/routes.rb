@@ -18,5 +18,6 @@ Rails.application.routes.draw do
 
   post "/login", to: "auth#login"
   get "/auto_login", to: "auth#get_current_user"
+  post "/following_posts", to: "users#following_posts"
 
 end

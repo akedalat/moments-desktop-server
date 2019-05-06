@@ -13,10 +13,24 @@ class UsersController < ApplicationController
       token = JWT.encode({user_id: user.id}, "super_secret_key")
 
       render json: {user: UserSerializer.new(user), token: token}
-      
+
     else
       render json:{errors: user.errors.full_messages}
     end
+  end
+
+  def following_posts
+    @user = User.find(params[:id])
+    filtered_posts = []
+    @user.posts.each do |post|
+      filtered_posts.push(post)
+    end
+    @user.following.each do |followee|
+      followee.posts.each do |post|
+        filtered_posts.push(post)
+      end
+    end
+    render json: filtered_posts, status: 200
   end
 
   def update
