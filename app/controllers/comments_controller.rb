@@ -6,19 +6,14 @@ class CommentsController < ApplicationController
   @post.comments
   render json: @post.comments, status: 200
   end
-  #
+
   def show
    @comment = @post.comments.find(params[:id])
    render json: @comment, status: 200
   end
 
-  # def new
-  #     @comment = Comment.new
-  # end
-
   def create
     @comment = @post.comments.create(comment_params)
-
     if @comment.save
       render json: @comment, status: 201
     else
