@@ -24,7 +24,7 @@ To run the server side, please follow these instructions:
 - Relationship
 
 ## License
-[MIT License](https://github.com/akedalat/moments-desktop-client/blob/master/LICENSE)
+[MIT License](https://github.com/akedalat/moments-desktop-server/blob/master/LICENSE)
 Copyright (c) 2019 [Kian Edalat](https://github.com/akedalat)
 
 
